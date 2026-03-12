@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 7390683392057870914}
   - component: {fileID: 934423514751760384}
   - component: {fileID: 6233756190160483084}
+  - component: {fileID: 6897504650665139104}
   m_Layer: 6
   m_Name: EnemyProto
   m_TagString: Enemy
@@ -369,6 +370,39 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6897504650665139104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324056727392400980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00fdcfba579668543af1274a24102438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAIBase
+  agent: {fileID: 0}
+  target: {fileID: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  walkPointRange: 10
+  timeBetweenAttacks: 1
+  projectile: {fileID: 1657435876094786709, guid: 6fd704a14a604fd41a45a15f0b469d12, type: 3}
+  shootPoint: {fileID: 992905137601437421}
+  shootSpeedY: 0
+  shootSpeedZ: 10
+  sightRange: 8
+  attackRange: 4
+  targetInSightRange: 0
+  targetInAttackRange: 0
+  stuckCheckTime: 2
+  stuckThreshold: 0.1
+  maxStuckDuration: 3
 --- !u!1001 &4070790044017181727
 PrefabInstance:
   m_ObjectHideFlags: 0
